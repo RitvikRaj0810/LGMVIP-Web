@@ -1,0 +1,98 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:wght@600&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:aliceblue;
+}
+
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ddd;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.result {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ddd;
+    font-size: 20px;
+    text-align: right;
+    color:#11c011;
+    font-family: robota;
+    background-color: #ffffff19;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.btn,.btn .operator {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #ddd;
+    font-size: 20px;
+    cursor: pointer;
+	margin: 10px;
+	border: solid 0.1px #111;
+	border-radius: 10px;
+	
+	
+}
+.btn{
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+}
+.btn .operator{
+    box-shadow: -5px -5px 15px #f0ad4e, 5px 5px 15px #222, inset 5px 5px 10px #444444, inset -5px -5px 10px #222;
+}
+.btn .calculate{}
+.btn ,.clear{}
+.operator {
+    background-color: #f0ad4e;
+}
+
+.calculate {
+    background-color: #5cb85c;
+}
+
+.clear {
+    background-color: #d9534f;
+    grid-column: 3/5;
+}
+
+/* .btn:hover {
+    background-color: #444;
+} */
+
+.btn:active, .btn:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+	font-size: 15px;
+	transition: 500ms;
+}
+h2{
+    font-size: 50px;
+    font-stretch:ultra-expanded;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:600%;
+    letter-spacing: 9px;
+    text-transform: lowercase;
+}
+h2{
+    font-family: 'Press Start 2P', cursive;
+}
