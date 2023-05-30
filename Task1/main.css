@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-image: url("To_Do_List.jpg");
+	background-repeat: no-repeat, repeat;
+	background-size: 100%;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif
+}
+
+.container{
+	width: 800px;
+	height: 600px;
+}
+
+
+header {
+
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	margin-top: 45px;
+	background-color: rgba(102, 51, 153, 0.705);
+	border-radius: 10px;
+
+	/* padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	border: solid 0.6px rgb(242, 244, 96);
+	background-color: rgba(217, 229, 174, 0.918); */
+}
+
+.main-title{
+	margin-bottom: 20px;
+	font-size: 40px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	margin-top: 20px;
+}
+
+.inputs{
+	margin-bottom: 15px;
+}
+
+#new-task-input{
+
+	border: none;
+	outline: none;
+	background: none;
+	background-color: gray;
+	padding: 10px 15px;
+	border-radius: 5px;
+	color: white;
+}
+
+#new-task-input::placeholder{
+	color: white;
+	filter: invert(1);
+}
+
+#new-task-submit{
+	padding: 8px 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+.task-list{
+	background-color: rgba(95, 158, 160, 0.76);
+	/* height: 60vh; */
+	margin-bottom: 10px;
+	border-radius: 10px;
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	height: 60vh;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.task-title{
+	font-weight: 400;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.owner{
+	color: white;
+	margin-left: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(102, 51, 153, 0.705);
+	padding: 10px;
+	border-radius: 1rem;
+	margin-bottom: 1.5rem;
+	border: none;
+}
+
+.task .actions button {
+	margin-left: 10px;
+	border-radius: 5px;
+	border: none;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.task .content .text {
+	background: none;
+	border: none;
+	outline: none;
+	color: white;
+}
